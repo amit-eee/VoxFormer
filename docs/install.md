@@ -6,8 +6,8 @@ Following https://mmdetection3d.readthedocs.io/en/latest/getting_started.html#in
 
 **a. Create a conda virtual environment and activate it.**
 ```shell
-conda create -n open-mmlab python=3.8 -y
-conda activate open-mmlab
+conda create -n vox python=3.8 -y
+conda activate vox
 ```
 
 **b. Install PyTorch and torchvision following the [official instructions](https://pytorch.org/).**
