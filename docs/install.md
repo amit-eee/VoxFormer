@@ -14,6 +14,8 @@ conda activate vox
 ```shell
 pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 # Recommended torch>=1.9
+# verify:
+python -c 'import torch;print(torch.__version__);print(torch.version.cuda)'
 
 ```
 
