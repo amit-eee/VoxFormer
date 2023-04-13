@@ -24,8 +24,9 @@ conda install -c omgarcia gcc-6 # gcc-6.2
 
 **c. Install mmcv-full.**
 ```shell
-pip install mmcv-full==1.4.0
+#  pip install mmcv-full==1.4.0
 #  pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+pip install mmcv-full==1.3.9 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
 ```
 
 **d. Install mmdet and mmseg.**
@@ -58,3 +59,10 @@ git clone https://github.com/NVlabs/VoxFormer.git
 cd VoxFormer && mkdir ckpts && cd ckpts
 ```
 Download the pretrained [resnet50](https://drive.google.com/file/d/1A4Efx7OQ2KVokM1XTbZ6Lf2Q5P-srsyE/view?usp=share_link).
+
+
+**i. Install einops and seaborn.**
+```shell
+pip install einops
+pip install seaborn
+```
