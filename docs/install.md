@@ -21,7 +21,7 @@ python -c 'import torch;print(torch.__version__);print(torch.version.cuda)'
 
 **c. Install gcc>=5 in conda env (optional).**
 ```shell
-conda install -c omgarcia gcc-6 # gcc-6.2
+conda install -c omgarcia gcc-6 -y # gcc-6.2
 ```
 
 **c. Install mmcv-full.**
