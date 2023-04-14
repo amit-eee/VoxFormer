@@ -48,7 +48,7 @@ cd ..
 
 **f. Install timm.**
 ```shell
-pip install timm
+pip install timm -y
 ```
 
 
