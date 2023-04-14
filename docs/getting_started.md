@@ -7,20 +7,20 @@
 ## Stage-1: Class-Agnostic Query Proposal
 Train QPN with 4 GPUs 
 ```
-./tools/dist_train.sh ./projects/configs/voxformer/qpn.py 4
+bash ./tools/dist_train.sh ./projects/configs/voxformer/qpn.py 4
 ```
 
 Eval QPN with 4 GPUs
 ```
-./tools/dist_test.sh ./projects/configs/voxformer/qpn.py ./path/to/ckpts.pth 4
+bash ./tools/dist_test.sh ./projects/configs/voxformer/qpn.py ckpts/resnet50-19c8e357.pth 4
 ```
 ## Stage-2: Class-Specific Voxel Segmentation
 Train VoxFormer with temporal information with 4 GPUs 
 ```
-./tools/dist_train.sh ./projects/configs/voxformer/voxformer-T.py 4
+bash ./tools/dist_train.sh ./projects/configs/voxformer/voxformer-T.py 4
 ```
 
 Eval VoxFormer with temporal information with 4 GPUs
 ```
-./tools/dist_test.sh ./projects/configs/voxformer/voxformer-T.py ./path/to/ckpts.pth 4
+bash ./tools/dist_test.sh ./projects/configs/voxformer/voxformer-T.py ckpts/miou13.35_iou44.15_epoch_12.pth 4
 ```
