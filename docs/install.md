@@ -43,6 +43,7 @@ git clone https://github.com/open-mmlab/mmdetection3d.git
 cd mmdetection3d
 git checkout v0.17.1 # Other versions may not be compatible.
 pip install -v -e .
+cd ..
 ```
 
 **f. Install timm.**
@@ -65,6 +66,6 @@ Download the pretrained [resnet50](https://drive.google.com/file/d/1A4Efx7OQ2KVo
 
 **i. Install einops and seaborn.**
 ```shell
-pip install einops
-pip install seaborn
+pip install einops -y
+pip install seaborn -y
 ```
