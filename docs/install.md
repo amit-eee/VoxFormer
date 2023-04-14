@@ -53,7 +53,7 @@ pip install timm
 
 **g. Clone VoxFormer.**
 ```
-git clone https://github.com/NVlabs/VoxFormer.git
+git clone https://github.com/amit-eee/VoxFormer.git
 ```
 
 **h. Prepare pretrained resnet50 models.**
