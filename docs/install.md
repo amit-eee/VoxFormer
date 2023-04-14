@@ -48,7 +48,7 @@ cd ..
 
 **f. Install timm.**
 ```shell
-pip install timm -y
+pip install timm
 ```
 
 
@@ -66,6 +66,32 @@ Download the pretrained [resnet50](https://drive.google.com/file/d/1A4Efx7OQ2KVo
 
 **i. Install einops and seaborn.**
 ```shell
-pip install einops -y
-pip install seaborn -y
+pip install einops
+pip install seaborn
+```
+
+**everything together**
+```shell
+conda create -n vox python=3.8 -y
+conda activate vox
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+# Recommended torch>=1.9
+# verify:
+python -c 'import torch;print(torch.__version__);print(torch.version.cuda)'
+conda install -c omgarcia gcc-6 -y# gcc-6.2
+#  pip install mmcv-full==1.4.0
+#  pip install mmcv-full==1.4.0 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+pip install mmcv-full==1.3.9 -f https://download.openmmlab.com/mmcv/dist/cu111/torch1.9.0/index.html
+pip install mmdet==2.14.0
+pip install mmsegmentation==0.14.1
+git clone https://github.com/open-mmlab/mmdetection3d.git
+cd mmdetection3d
+git checkout v0.17.1 # Other versions may not be compatible.
+pip install -v -e .
+cd ..
+pip install timm
+git clone https://github.com/amit-eee/VoxFormer.git
+cd VoxFormer && mkdir ckpts && cd ckpts
+pip install einops
+pip install seaborn
 ```
