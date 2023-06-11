@@ -12,7 +12,7 @@ CUDA_VISIBLE_DEVICES=1,2,3,4 bash ./tools/dist_train.sh ./projects/configs/voxfo
 
 Eval QPN with 4 GPUs
 ```
-CUDA_VISIBLE_DEVICES=1,2,3,4 bash ./tools/dist_test.sh ./projects/configs/voxformer/qpn.py ckpts/resnet50-19c8e357.pth 4
+CUDA_VISIBLE_DEVICES=1,2,3,4 bash ./tools/dist_test.sh ./projects/configs/voxformer/qpn.py ckpts/qpn_iou52.03.pth 4
 ```
 ## Stage-2: Class-Specific Voxel Segmentation
 Train VoxFormer with temporal information with 4 GPUs 
