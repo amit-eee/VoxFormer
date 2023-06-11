@@ -28,7 +28,7 @@ _query_tag_ = 'query_iou5203_pre7712_rec6153'
 
 model = dict(
    type='VoxFormer',
-   pretrained=dict(img='ckpts/resnet50-19c8e357.pth'),
+   pretrained=dict(img='ckpts/qpn_iou52.03.pth'),
    img_backbone=dict(
        type='ResNet',
        depth=50,
